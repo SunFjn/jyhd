@@ -1,0 +1,144 @@
+{
+    "frames": {
+        "0.png": {
+            "frame": {
+                "h": 31,
+                "idx": 0,
+                "w": 35,
+                "x": 0,
+                "y": 0
+            },
+            "sourceSize": {
+                "h": 38,
+                "w": 42
+            },
+            "spriteSourceSize": {
+                "x": 3,
+                "y": 3
+            }
+        },
+        "1.png": {
+            "frame": {
+                "h": 33,
+                "idx": 0,
+                "w": 37,
+                "x": 0,
+                "y": 32
+            },
+            "sourceSize": {
+                "h": 38,
+                "w": 42
+            },
+            "spriteSourceSize": {
+                "x": 2,
+                "y": 2
+            }
+        },
+        "2.png": {
+            "frame": {
+                "h": 34,
+                "idx": 0,
+                "w": 38,
+                "x": 0,
+                "y": 66
+            },
+            "sourceSize": {
+                "h": 38,
+                "w": 42
+            },
+            "spriteSourceSize": {
+                "x": 2,
+                "y": 2
+            }
+        },
+        "3.png": {
+            "frame": {
+                "h": 35,
+                "idx": 0,
+                "w": 39,
+                "x": 38,
+                "y": 0
+            },
+            "sourceSize": {
+                "h": 38,
+                "w": 42
+            },
+            "spriteSourceSize": {
+                "x": 1,
+                "y": 1
+            }
+        },
+        "4.png": {
+            "frame": {
+                "h": 37,
+                "idx": 0,
+                "w": 40,
+                "x": 78,
+                "y": 0
+            },
+            "sourceSize": {
+                "h": 38,
+                "w": 42
+            },
+            "spriteSourceSize": {
+                "x": 1,
+                "y": 0
+            }
+        },
+        "5.png": {
+            "frame": {
+                "h": 36,
+                "idx": 0,
+                "w": 41,
+                "x": 39,
+                "y": 38
+            },
+            "sourceSize": {
+                "h": 38,
+                "w": 42
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 1
+            }
+        },
+        "6.png": {
+            "frame": {
+                "h": 37,
+                "idx": 0,
+                "w": 41,
+                "x": 39,
+                "y": 75
+            },
+            "sourceSize": {
+                "h": 38,
+                "w": 42
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "7.png": {
+            "frame": {
+                "h": 31,
+                "idx": 0,
+                "w": 35,
+                "x": 81,
+                "y": 38
+            },
+            "sourceSize": {
+                "h": 38,
+                "w": 42
+            },
+            "spriteSourceSize": {
+                "x": 3,
+                "y": 3
+            }
+        }
+    },
+    "meta": {
+        "image": "email_effect.png",
+        "prefix": "email_effect/"
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "frames": {
+        "Left.png": {
+            "frame": {
+                "h": 258,
+                "idx": 0,
+                "w": 263,
+                "x": 0,
+                "y": 0
+            },
+            "sourceSize": {
+                "h": 1024,
+                "w": 1024
+            },
+            "spriteSourceSize": {
+                "x": 257,
+                "y": 337
+            }
+        },
+        "Right.png": {
+            "frame": {
+                "h": 256,
+                "idx": 0,
+                "w": 99,
+                "x": 264,
+                "y": 0
+            },
+            "sourceSize": {
+                "h": 1024,
+                "w": 1024
+            },
+            "spriteSourceSize": {
+                "x": 411,
+                "y": 337
+            }
+        }
+    },
+    "meta": {
+        "image": "Wing_6.png",
+        "prefix": "Wing_6/"
+    }
+}

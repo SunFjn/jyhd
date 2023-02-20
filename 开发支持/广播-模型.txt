@@ -1,0 +1,30 @@
+
+角色模型的初始化依赖 广播入屏 返回两个数组 怪物和人
+
+创建human模型 然后挂载对应组件  比如 名字title 宠物pet 移动locomotor_component
+
+主角的移动是场景脚本控制  needsync 控制是否同步给服务器  服务器转发到其他玩家
+同理其他人转发依赖广播玩家移动 这里是排除主角的数据 会返回 id != this.id 跳过了
+
+模型的移动依赖帧回调或者定时回调
+在父级模型 for 循环所有挂载组件 触发t.update 方法 
+移动组件根据移动开始时间 减 当前时间 算出已移动时间 算法 转换成 当前坐标位置 逐步移动
+
+
+宠物 pet
+宠物的移动依赖 PetBrainComponent 组件
+内部状态机 
+判断和主角的距离固定相距200
+
+  this._tree = BehaviorTree.create(
+                new Selector().addChild(
+                    new FollowAndAttack(owner, master, 200)
+                ).addChild(
+                    new RestAction(owner, 500, true)
+                )
+            );
+
+RestAction  // 待机和死亡状态
+
+
+

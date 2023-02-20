@@ -1,0 +1,461 @@
+<!-- <!DOCTYPE html> -->
+<html>
+
+<head id="head">
+    <meta charset='utf-8' />
+    <title>Game - 祝您游戏愉快</title>
+    <meta name='renderer' content='webkit'>
+    <meta name='viewport'
+        content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' />
+    <meta name='apple-mobile-web-app-capable' content='yes' />
+    <meta name='full-screen' content='true' />
+    <meta name='x5-fullscreen' content='true' />
+    <meta name='360-fullscreen' content='true' />
+    <meta http-equiv='expires' content='0' />
+    <meta name='laya' screenorientation='portrait' />
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta http-equiv='expires' content='0' />
+    <meta http-equiv='Cache-Control' content='no-siteapp' />
+    <meta name="full-screen" content="yes">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <link rel="icon" href="data:image/ico;base64,aWNv">
+    <style type="text/css">
+        video::-webkit-media-controls-fullscreen-button {
+            display: none;
+        }
+
+        video::-webkit-media-controls-play-button {
+            display: none;
+        }
+
+        video::-webkit-media-controls-timeline {
+            display: none;
+        }
+
+        video::-webkit-media-controls-current-time-display {
+            display: none;
+        }
+
+        video::-webkit-media-controls-time-remaining-display {
+            display: none;
+        }
+
+        video::-webkit-media-controls-mute-button {
+            display: none;
+        }
+
+        video::-webkit-media-controls-toggle-closed-captions-button {
+            display: none;
+        }
+
+        video::-webkit-media-controls-enclosure {
+            display: none;
+        }
+
+        video::-webkit-media-controls-volume-slider {
+            display: none;
+        }
+
+        .defautl_width {
+            width: 2265px;
+        }
+
+        .left_commmon {
+            width: 200px;
+            height: 840px;
+            position: absolute;
+        }
+
+        .white_text {
+            position: absolute;
+            color: rgb(255, 255, 255);
+        }
+
+        .mask_common {
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            left: -1000px;
+            right: -1000px;
+            top: -1000px;
+            bottom: -1000px;
+            z-index: 998;
+            display: none;
+        }
+
+        .alerts {
+            display: none;
+            position: absolute;
+            z-index: 999;
+            top: 20px;
+        }
+
+        .alert_common {
+            width: 720px;
+            height: 1080px;
+            background-repeat: no-repeat;
+            position: relative;
+            background-size: contain;
+        }
+
+        .xuanqu_common {
+            height: 35px;
+            line-height: 34px;
+            font-size: 32px;
+            font-family: SimHei;
+            pointer-events: none;
+        }
+
+        .box_common {
+            box-sizing: border-box;
+            position: absolute;
+        }
+
+        .bg_common {
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            text-align: center;
+        }
+
+        .select_list {
+            position: relative;
+            width: 200px;
+            height: 76px;
+        }
+
+        .select_list img {
+            position: absolute;
+            width: 112%;
+            height: 70px;
+        }
+
+        .select_list label {
+            position: absolute;
+            top: 18px;
+            width: 220px;
+            height: 32px;
+            line-height: 32px;
+            text-align: center;
+            color: rgb(1, 1, 1);
+            font-size: 24px;
+            font-family: SimHei;
+            pointer-events: none;
+        }
+
+        .server_list {
+            width: 381px;
+            height: 66px;
+            position: relative
+        }
+
+        .server_list .bg {
+            position: absolute;
+            width: 88%;
+            height: 92%;
+        }
+
+        .server_list .icon {
+            position: absolute;
+            left: 18px;
+            top: 18px;
+            pointer-events: none;
+        }
+
+        .server_list label {
+            position: absolute;
+            left: 50px;
+            top: 17px;
+            color: rgb(0, 0, 0);
+            line-height: 24px;
+            font-size: 24px;
+            font-family: SimHei;
+            pointer-events: none;
+        }
+
+        .scaleAni:active {
+            transform: scale(1.14, 1.14);
+        }
+
+        .scaleAni {
+            transform: scale(1, 1);
+            transition: all 0.1s;
+        }
+    </style>
+</head>
+
+<body id="body" style="position: fixed; margin: 0px; overflow: hidden; background-color: rgb(0, 0, 0);">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="ChannelProcessing.js"></script>
+    <script type="text/javascript" src="name_library.js"></script>
+    <script type="text/javascript" src="select_server.js"></script>
+    <script type="text/javascript" src="libs/min/inflate.min.js"></script>
+    <script type="text/javascript" src="libs/min/msgpack.min.js"></script>
+    <script type="text/javascript" src="libs/DouaiwanSdkChild.js"></script>
+    <div id="videoCon" style="position: absolute; width: 990px; height: 1760px;">
+        <div id="videobox" style="position: absolute; width: 990px; height: 1760px;">
+            <video id="video1" style="width: 990px; height: 1760px; object-fit: fill;" poster="html_login/movie_020.jpg"
+                autoplay loop muted>
+                <source src="./html_login/movie_020.mp4" type="video/mp4">
+            </video>
+        </div>
+        <img src="html_login/titleImg.png" style="position: absolute; left: 251px; top: 82px;">
+    </div>
+    <div id="serverCon" style="position: absolute; height: 1280px; width: 720px;">
+        <div class="alerts" style="overflow: hidden;" id="Domdiv1">
+            <div class="alert_common" style="background-image: url('html_login/bg_hd_01.png');  ">
+                <div id="Domdiv4" class="box_common"
+                    style="width: 80%; height: 673px; font-size: 25px; color: rgb(15, 12, 12); top: 241px; left: 81px; padding: 0px; overflow-y: scroll;">
+                </div>
+                <div id="Domdiv3" class="bg_common"
+                    style="background-image: url('html_login/btn_xfy_qf_1.png'); width: 250px; height: 66px; top: 950px; left: 240px; font-size: 35px; line-height: 66px; color: rgb(255, 255, 255);">
+                    确定</div>
+            </div>
+        </div>
+        <div class="alerts" id="Domdiv5">
+            <div class="alert_common" style="background-image: url('html_login/bg_hd_02.png'); ">
+                <div id="DomdivNoticeText" class="box_common"
+                    style="width: 580px; height: 705px; text-align: justify; font-size: 23px; color: rgb(70, 50, 50); top: 225px; line-height: 1.7; left: 66px; padding: 0px; overflow-y: auto;">
+                    亲爱的江湖侠客们：
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;高武仙侠游戏《浪客江湖》将于2022年8月19日10点正式上线！欢迎各位侠客的入驻，为了回馈各位侠客的期待，游戏内准备好了公测福利，热门时装，炫酷装备等豪礼送不停。各位侠客准备好了吗？
+                    <br>
+                    <br>
+                    Prat.One
+                    <br>
+                    开服盛典！海量豪礼享不停！
+                    <br>
+                    ★福利一：庆游戏开服，全服赠送稀有法衣，特殊时装！
+                    <br>
+                    ★福利二：冒险指南助力成长，大量奖励，代币券送不停！
+                    <br>
+                    <br>
+                    Prat.Two
+                    <br>
+                    開服狂歡！火力全開：迎新副本，限定兑换，宠物火热开放！
+                    <br>
+                    ★活动一：限时兑换，限时探索，限时礼包，至尊特权，助各位侠客早日登顶！
+                    <br>
+                    ★活动二：开服盛宴，各位侠客，你们准备好参加这场无敌的盛宴了吗？
+                    <br>
+                </div>
+                <div id="noticeTitle" class="bg_common"
+                    style="background-image: url('html_login/btn_gg.png'); width: 260px; height: 50px; left: 218px; top: 114px; font-size: 28px; line-height: 44px; color: black;">
+                </div>
+                <div id="showNotice"
+                    style="background-image: url('html_login/btn_hd_jt.png'); width: 28px; height: 20px; position: absolute; top: 193px; left: 500px;visibility: hidden;">
+                </div>
+
+                <div class="box_common"
+                    style="width: 720px; height: 209px; background-image: url('html_login/image_click_tip.png'); top: 920px; left: 11px; pointer-events: none;">
+                </div>
+                <div id="noticeConfirmBtn"
+                    style="background-image: url('html_login/btn_common_gb.png'); width: 75px; height: 78px; position: absolute; top: 97px; left: 596px;">
+                </div>
+            </div>
+        </div>
+        <div id="DomCloseMask" class="mask_common">
+        </div>
+        <div id="服务器列表背景2" class="mask_common">
+        </div>
+        <img id="selectImg" src="html_login/btn_xfy_xq.png"
+            style="position: absolute; left: 216px; top: 945px; height: 52px; width: 269px;">
+        <img src="html_login/btn_xfy_dlyx.png" class="scaleAni" id="loginBtn"
+            style="position: absolute; left: 184px; top: 1022px;">
+        <img id="DomImg1" src="html_login/image_age.png" class="scaleAni"
+            style="z-index: 0; position: absolute; left: 16px; top: 1064px;">
+        <img src="html_login/btn_xfy_gg.png" class="scaleAni" id="DomImg11"
+            style="z-index: 0; position: absolute; right: 25px; top: 1064px;">
+        <img id="bgImg" style="position: absolute;left:-120px;top:-140px; display: none;" />
+        <p class="white_text"
+            style="display: flex; font-size: 25px; left: 50px; top: 1172px; align-items: center; flex-direction: row-reverse; ">
+            <span id="Domspan">请仔细阅读同意《游戏用户协议》和《隐私政策》</span>
+            <img src="html_login/checked0.png" style="margin-right: 20px;" id="DomImg2">
+        </p>
+        <div class="white_text"
+            style="font-size: 18px; left: 50px; top: 1230px; align-items: center; flex-direction: row-reverse; text-align: center; ">
+            <p style="margin: 0; padding: 0; height: 22px;">审批文号：国新出审[2019]1369号 著作权人：深圳悠悠互动科技有限公司</p>
+            <p style="margin: 0; padding: 0; height: 22px;">出版单位：成都盈众九州网络科技有限公司 出版物号：ISBN 978-7-498-06499-8</p>
+        </div>
+        <div id="Domdivalert"
+            style="width: 700px; height: 55px; background-color: rgba(0, 0, 0, 0.2); border-top: 1px solid rgb(60, 73, 91); border-bottom: 1px solid rgb(60, 73, 91); position: absolute; top: 220px; line-height: 55px; display: none; left: 50%; transform: translateX(-50%);">
+            <p style="color: rgb(255, 247, 0); font-size: 1.3rem; padding: 0px 10px; margin: 0px; text-align: center;">
+                请勾选同意《用户协议》和《隐私政策》,即可进入游戏</p>
+        </div>
+        <img id="stateImg" src="html_login/image_xfy_fm.png"
+            style="position: absolute; left: 245px; top: 959px; pointer-events: none;">
+        <label id="servername" class="white_text xuanqu_common"
+            style="left: 203px; top: 954px; width: 300px; text-align: center; ">选区</label>
+        <label class="white_text xuanqu_common"
+            style="left: 517px; top: 1005px; text-align: left;visibility: collapse;">换区&gt;</label>
+        <div id="serverList"
+            style="position: absolute; left: -100px; top: -120px; width: 960px; height: 1560px; display: none; z-index: 999;">
+            <img src="html_login/image_xfy_new.png" style="position: absolute; left: 108px; top: 227px;">
+            <img src="html_login/btn_tongyong_13.png" id="closeBtn"
+                style="position: absolute; left: 735px; top: 244px;">
+            <div id="leftCon" class="left_commmon" style=" left: 156px; top: 350px; width: 222px; overflow: hidden;">
+                <div id="leftDiv" class="left_commmon" style=" left: 0px; top: 33px; width: 222px; overflow: visible;">
+                </div>
+            </div>
+            <div id="rightCon"
+                style="position: absolute; left: 406px; top: 371px; width: 355px; height: 803px; overflow: hidden overlay;">
+                <div id="rightDiv" style="position: absolute; left: 0px; top: 14px; width: 343px; overflow: hidden;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="application/javascript">
+        console.log("index.html init!!!");
+        var haveRoleServers = new Array();
+        function zoom() {
+            var initW = window.innerWidth || document.body.clientWidth;
+            var initH = window.innerHeight || document.body.clientHeight;
+            if (initW > screen.availWidth) {
+                initW = screen.availWidth;
+            }
+            var zoomW = initW / 720;
+            var zoomH = initH / 1280;
+            var zoom = zoomW < zoomH ? zoomW : zoomH;
+            var __w = initW / 1920;
+            var __h = initH / 1080;
+            var __z = __w < __h ? __w : __h;
+            // console.log('vtz:比例', initW / initH);
+            // console.log('vtz:zoom', zoom);
+            // $("#videoCon").css({ webkitTransform: "scale(" + zoom + ")", left: (initW - 720) * 0.5 + "px", top: (initH - 1280) * 0.5 + "px" });
+
+            $("#serverCon").css({ webkitTransform: "scale(" + zoom + ")", left: (initW - 720) * 0.5 + "px", top: (initH - 1280) * 0.5 + "px" });
+
+            // $("#Domdiv1").css({ webkitTransform: "scale(" + zoom + ")", left: (initW - 720) * 0.5 + "px", top: (initH - 1280) * 0.5 + "px" });
+
+            // $("#Domdiv5").css({ webkitTransform: "scale(" + zoom + ")", left: (initW - 720) * 0.5 + "px", top: (initH - 1280) * 0.5 + 100 + "px" });
+
+            $("#videoCon").css({ webkitTransform: "scale(" + zoom + ")", left: (initW - 990) * 0.5 + "px", top: -(1 - zoom) * 880 + "px" });
+
+            // var v_zoomW = initW / 3840;
+            // var v_zoomH = initH / 2160;
+            // var v_zoom = v_zoomW > v_zoomH ? v_zoomW : v_zoomH;
+            // $("#videoCon").css({ webkitTransform: "scale(" + v_zoom + ")", left: (initW - 3840) * 0.5 + "px", top: (initH - 2160) * 0.5 + "px" });
+
+        }
+        zoom();
+        window.addEventListener("resize", zoom);
+        // 判断utf8_ba4函数是否存在
+        if (typeof utf8_to_b64 === 'undefined' || typeof utf8_to_b64 !== 'function') {
+            var utf8_to_b64 = function (str) {
+                return window.btoa(unescape(encodeURIComponent(str)));
+            }
+        }
+
+        // 游戏参数，全局
+        var gameParams = null;
+
+        // 入口方法
+        dawSDK.onEnter(gotoSelectServer);
+
+        // 进入选服
+        function gotoSelectServer() {
+            gameParams = dawSDK.gameParams
+            // console.log("gameParams:", gameParams);
+            if (window.selectServerView) {
+                window.selectServerView.open();
+            }
+
+        }
+
+        // 请求服务器列表
+        function req_server_list(step, role_id) {
+            let baseAddr = "game/server?p=";
+            if (dawSDK.current_platform == dawSDK.platform.formal) {
+                baseAddr = "game/server/list?p=";
+            }
+            let params = utf8_to_b64(
+                `package=${gameParams.package}&account=${gameParams.account}&only_server=${gameParams.only_server}&is_set=${gameParams.is_set}`);
+            sendXHR(`${gameParams.backstage}${baseAddr}${params}`, null, reqServerListCallBack);
+        }
+
+        // 请求服务器列表回调
+        function reqServerListCallBack(data) {
+            // 失败
+            if (data.errCode !== 1) {
+                gameParams.hasReq = false;
+                alert(data.errMsg);
+                return;
+            }
+            gameParams.hasReq = true;
+            data = data.data;
+            haveRoleServers = data.s[0];
+            // 成功
+            gameParams.serverZoneNames = data.z;
+            gameParams.serverZones = data.s;
+            // 资源版本，暂时没用到
+            for (const key in gameParams.serverZones) {
+                for (const i in gameParams.serverZones[key]) {
+                    let item = gameParams.serverZones[key][i]
+                    item['resVer'] = !item['resVer'] ? '' : item['resVer'];
+                }
+            }
+
+            //判断是否强制显示公告及公告内容和标题
+            if (!data.notice) {
+                gameParams.notices = {
+                    alert: 0,
+                    html: "祝您游戏愉快",
+                    title: "公  告"
+                }
+            } else {
+                gameParams.notices = {
+                    alert: data.notice.alert,
+                    html: data.notice.contents,
+                    title: data.notice.title
+                }
+            }
+
+            // 强制显示公告  
+            if (gameParams.notices.alert == 1) {
+                // console.log('vtz:gameParams.notices',gameParams.notices);
+                window.selectServerView.openUpdateNotice()
+                gameParams.notices.alert = 0;
+            }
+
+            //内网 默认cdn改为空
+            for (var i in gameParams.serverZones) {
+                for (var o in gameParams.serverZones[i]) {
+                    gameParams.serverZones[i][o].cdn = '';
+                }
+            }
+
+            // 刷新服务器列表
+            selectServerView.refreshServerList();
+        }
+        // 视频播放声音
+        var muted_status = false;
+
+        // function muted_false() {
+        //     if (!muted_status) {
+        //         document.getElementById("video1").muted = false;
+        //     }
+        //     muted_status = true;
+        // }
+        // oncanplay = () => {
+        //     muted_false()
+        // }
+        // document.onclick = () => {
+        //     muted_false()
+        // }
+        // document.onmousedown = () => {
+        //     muted_false()
+        // }
+        // document.onmouseup = () => {
+        //     muted_false()
+        // }
+    </script>
+</body>
+
+</html>

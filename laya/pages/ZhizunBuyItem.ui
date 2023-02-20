@@ -1,0 +1,47 @@
+{
+    "x":0,
+    "type":"ItemRender",
+    "selectedBox":1,
+    "selecteID":26,
+    "searchKey":"ItemRender",
+    "props":{"width":135,"height":57},
+    "nodeParent":-1,
+    "maxID":27,
+    "label":"ItemRender",
+    "isOpen":true,
+    "isDirectory":true,
+    "isAniNode":true,
+    "ignoreDic":{
+        "mission_party/tachun/image_bg_1.png":"mission_party/tachun/image_bg_1.png"
+    },
+    "hasChild":true,
+    "compId":1,
+    "child":[
+        {
+            "x":15,
+            "type":"Button",
+            "searchKey":"Button,listBtn",
+            "props":{"y":0,"x":-1,"width":137,"var":"listBtn","stateNum":"2","skin":"common/btn_tongyong_1.png","labelSize":24,"labelPadding":"1","labelFont":"SimHei","labelColors":"#c9724b, #ffffff","label":"天域·神剑","height":59},
+            "nodeParent":1,
+            "label":"listBtn",
+            "isDirectory":false,
+            "isAniNode":true,
+            "hasChild":false,
+            "compId":26,
+            "child":[
+                ],
+            "$HIDDEN":false
+        }],
+    "appendDic":{
+
+    },
+    "animations":[
+        {
+            "nodes":[
+                ],
+            "name":"ani1",
+            "id":1,
+            "frameRate":24,
+            "action":0
+        }]
+}

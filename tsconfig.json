@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "sourceMap": true,
+    "outFile": "bin/js/main.js",
+    "allowJs": true,
+    "removeComments": true
+  },
+  "files": [
+    "src/main.ts"
+  ],
+  "include": [
+    "libs/*",
+    "libs/**/*",
+    "src/*",
+    "src/**/*"
+  ]
+}

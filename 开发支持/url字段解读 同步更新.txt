@@ -1,0 +1,4 @@
+token // 游戏token
+platform // 游戏内置平台 默认0是SDK正式用 2是测试服 具体看ChannelProcessing.js
+daw_channel  // 渠道标识 PHP请求需要  VUE赋值
+usear_token // 用户token 请求php功能使用 VUE赋值

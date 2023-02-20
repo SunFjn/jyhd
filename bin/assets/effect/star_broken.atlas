@@ -1,0 +1,76 @@
+{
+    "frames": {
+        "0.png": {
+            "frame": {
+                "h": 38,
+                "idx": 0,
+                "w": 38,
+                "x": 0,
+                "y": 0
+            },
+            "sourceSize": {
+                "h": 200,
+                "w": 200
+            },
+            "spriteSourceSize": {
+                "x": 81,
+                "y": 79
+            }
+        },
+        "1.png": {
+            "frame": {
+                "h": 113,
+                "idx": 0,
+                "w": 59,
+                "x": 0,
+                "y": 39
+            },
+            "sourceSize": {
+                "h": 200,
+                "w": 200
+            },
+            "spriteSourceSize": {
+                "x": 68,
+                "y": 43
+            }
+        },
+        "2.png": {
+            "frame": {
+                "h": 73,
+                "idx": 0,
+                "w": 61,
+                "x": 60,
+                "y": 0
+            },
+            "sourceSize": {
+                "h": 200,
+                "w": 200
+            },
+            "spriteSourceSize": {
+                "x": 69,
+                "y": 68
+            }
+        },
+        "3.png": {
+            "frame": {
+                "h": 78,
+                "idx": 0,
+                "w": 63,
+                "x": 60,
+                "y": 74
+            },
+            "sourceSize": {
+                "h": 200,
+                "w": 200
+            },
+            "spriteSourceSize": {
+                "x": 68,
+                "y": 67
+            }
+        }
+    },
+    "meta": {
+        "image": "star_broken.png",
+        "prefix": "star_broken/"
+    }
+}

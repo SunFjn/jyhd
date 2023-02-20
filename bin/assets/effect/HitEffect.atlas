@@ -1,0 +1,93 @@
+{
+    "frames": {
+        "0.png": {
+            "frame": {
+                "h": 66,
+                "idx": 0,
+                "w": 79,
+                "x": 0,
+                "y": 0
+            },
+            "sourceSize": {
+                "h": 102,
+                "w": 125
+            },
+            "spriteSourceSize": {
+                "x": 23,
+                "y": 28
+            }
+        },
+        "1.png": {
+            "frame": {
+                "h": 93,
+                "idx": 0,
+                "w": 121,
+                "x": 0,
+                "y": 67
+            },
+            "sourceSize": {
+                "h": 102,
+                "w": 125
+            },
+            "spriteSourceSize": {
+                "x": 1,
+                "y": 7
+            }
+        },
+        "2.png": {
+            "frame": {
+                "h": 99,
+                "idx": 0,
+                "w": 124,
+                "x": 0,
+                "y": 161
+            },
+            "sourceSize": {
+                "h": 102,
+                "w": 125
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 2
+            }
+        },
+        "3.png": {
+            "frame": {
+                "h": 102,
+                "idx": 0,
+                "w": 123,
+                "x": 122,
+                "y": 0
+            },
+            "sourceSize": {
+                "h": 102,
+                "w": 125
+            },
+            "spriteSourceSize": {
+                "x": 1,
+                "y": 0
+            }
+        },
+        "4.png": {
+            "frame": {
+                "h": 90,
+                "idx": 0,
+                "w": 125,
+                "x": 125,
+                "y": 103
+            },
+            "sourceSize": {
+                "h": 102,
+                "w": 125
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 6
+            }
+        }
+    },
+    "meta": {
+        "image": "HitEffect.png",
+        "prefix": "HitEffect/"
+    }
+}

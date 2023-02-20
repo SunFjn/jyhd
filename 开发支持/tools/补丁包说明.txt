@@ -1,0 +1,3 @@
+1.打包涉及 tools和release两个文件夹 ：release中仅svn上传base（不替换base的情况下此文件夹不会变动），tools中需上传makePack_xiaoyaoshiqi.json;
+2.PackageTools.bat 中最后一个参数为(0不替换,1替换)，当次打包是否以当次bin目录内资源替换base，替换后，tools中makePack_xiaoyaoshiqi.json里的"baseVersion"字段将会自动替换作为下次base的依据（此时base内的version_xxxxxxxx.json文件名即为该"baseVersion"字段值）
+3.然后makePack_xiaoyaoshiqi.json中"BanbenVersion"将会自动+1，打包完成后，需上传 ，保证svn最新，给后续的人使用。

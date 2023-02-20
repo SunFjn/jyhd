@@ -1,0 +1,1 @@
+--disable-web-security --user-data-dir=C:\MyChromeDevUserData

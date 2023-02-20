@@ -1,0 +1,251 @@
+{
+"skeleton": { "hash": "ZOuLDZ5e0OGwRtpCFFp1rMRulso", "spine": "3.7.84", "width": 906.23, "height": 707.73 },
+"bones": [
+	{ "name": "root" },
+	{ "name": "transform", "parent": "root" },
+	{ "name": "images/UI_jiayuan_Farm/UI_LightC", "parent": "transform", "x": 67.03, "y": 642.71, "scaleX": 2 },
+	{ "name": "images/UI_jiayuan_Farm/UI_LightC2", "parent": "images/UI_jiayuan_Farm/UI_LightC", "x": 23.74, "y": -53.54 },
+	{ "name": "images/UI_jiayuan_Farm/UI_StarLightA", "parent": "transform", "y": 350.8 },
+	{ "name": "images/UI_jiayuan_Farm/UI_StarLightA2", "parent": "transform", "y": 350.8 },
+	{ "name": "骨骼", "parent": "transform", "scaleY": 0.632, "shearY": -27.15 }
+],
+"slots": [
+	{ "name": "images/UI_jiayuan_Farm/image_paiziyou0", "bone": "transform", "attachment": "images/UI_jiayuan_Farm/image_paiziyou0" },
+	{ "name": "images/UI_jiayuan_Farm/image_paiziyou1", "bone": "骨骼", "color": "ffffff09" },
+	{ "name": "images/UI_jiayuan_Farm/image_paiziyou2", "bone": "骨骼", "color": "ffffff09" },
+	{ "name": "images/UI_jiayuan_Farm/UI_Shadow", "bone": "transform", "attachment": "images/UI_jiayuan_Farm/UI_Shadow" },
+	{ "name": "images/UI_jiayuan_Farm/UI_LightC", "bone": "images/UI_jiayuan_Farm/UI_LightC" },
+	{ "name": "images/UI_jiayuan_Farm/UI_LightC2", "bone": "images/UI_jiayuan_Farm/UI_LightC2" },
+	{ "name": "images/UI_jiayuan_Farm/UI_StarLightA", "bone": "images/UI_jiayuan_Farm/UI_StarLightA" },
+	{ "name": "images/UI_jiayuan_Farm/UI_StarLightA2", "bone": "images/UI_jiayuan_Farm/UI_StarLightA2" }
+],
+"skins": {
+	"default": {
+		"images/UI_jiayuan_Farm/UI_LightC": {
+			"images/UI_jiayuan_Farm/UI_LightC": { "width": 18, "height": 8 }
+		},
+		"images/UI_jiayuan_Farm/UI_LightC2": {
+			"images/UI_jiayuan_Farm/UI_LightC": { "width": 18, "height": 8 }
+		},
+		"images/UI_jiayuan_Farm/UI_Shadow": {
+			"images/UI_jiayuan_Farm/UI_Shadow": { "scaleX": 31.249, "scaleY": 1.373, "width": 29, "height": 29 }
+		},
+		"images/UI_jiayuan_Farm/UI_StarLightA": {
+			"images/UI_jiayuan_Farm/UI_StarLightA": { "width": 30, "height": 30 }
+		},
+		"images/UI_jiayuan_Farm/UI_StarLightA2": {
+			"images/UI_jiayuan_Farm/UI_StarLightA": { "width": 30, "height": 30 }
+		},
+		"images/UI_jiayuan_Farm/image_paiziyou0": {
+			"images/UI_jiayuan_Farm/image_paiziyou0": { "y": 343.32, "width": 539, "height": 689 }
+		},
+		"images/UI_jiayuan_Farm/image_paiziyou1": {
+			"images/UI_jiayuan_Farm/image_paiziyou0": {
+				"type": "mesh",
+				"uvs": [ 0, 0.99927, 0.01956, 0.78021, 0.088, 0.67313, 0.9093, 0.66841, 0.96566, 0.80226, 1, 0.99927 ],
+				"triangles": [ 2, 3, 4, 4, 0, 2, 0, 1, 2, 4, 5, 0 ],
+				"vertices": [ -271.5, 4.02, -256.96, -146.91, -220.07, -220.69, 222.61, -223.95, 252.99, -131.72, 271.5, 4.02 ],
+				"hull": 6
+			}
+		},
+		"images/UI_jiayuan_Farm/image_paiziyou2": {
+			"images/UI_jiayuan_Farm/image_paiziyou0": {
+				"type": "mesh",
+				"uvs": [ 0, 0.99927, 0, 0.89752, 0.08436, 0.7831, 0.90565, 0.77838, 0.97318, 0.84478, 1, 0.99927 ],
+				"triangles": [ 3, 4, 5, 2, 3, 5, 0, 1, 2, 5, 0, 2 ],
+				"vertices": [ -271.5, 4.02, -270.6, -66.09, -222.03, -144.92, 220.65, -148.18, 257.04, -102.42, 271.5, 4.02 ],
+				"hull": 6
+			}
+		}
+	}
+},
+"animations": {
+	"animation": {
+		"slots": {
+			"images/UI_jiayuan_Farm/UI_LightC": {
+				"color": [
+					{ "time": 1.3333, "color": "ffffff00" },
+					{ "time": 1.6667, "color": "ffffffff" },
+					{ "time": 2.2, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 1.3333, "name": "images/UI_jiayuan_Farm/UI_LightC" },
+					{ "time": 2.2, "name": null }
+				]
+			},
+			"images/UI_jiayuan_Farm/UI_LightC2": {
+				"color": [
+					{ "time": 1.4, "color": "ffffff00" },
+					{ "time": 1.6667, "color": "ffffffff" },
+					{ "time": 2.3333, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 1.4, "name": "images/UI_jiayuan_Farm/UI_LightC" },
+					{ "time": 2.6667, "name": null }
+				]
+			},
+			"images/UI_jiayuan_Farm/UI_StarLightA": {
+				"color": [
+					{
+						"time": 0.2333,
+						"color": "ffffff00",
+						"curve": [ 0, 0.59, 0.75, 1 ]
+					},
+					{
+						"time": 0.4,
+						"color": "ffffffff",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.9, "color": "ffffff00", "curve": "stepped" },
+					{
+						"time": 1.0667,
+						"color": "ffffff00",
+						"curve": [ 0, 0.59, 0.75, 1 ]
+					},
+					{
+						"time": 1.2333,
+						"color": "ffffffff",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.7333, "color": "ffffff00", "curve": "stepped" },
+					{
+						"time": 2.0667,
+						"color": "ffffff00",
+						"curve": [ 0, 0.59, 0.75, 1 ]
+					},
+					{
+						"time": 2.2333,
+						"color": "ffffffff",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2.7333, "color": "ffffff00", "curve": "stepped" },
+					{
+						"time": 3.2333,
+						"color": "ffffff00",
+						"curve": [ 0, 0.59, 0.75, 1 ]
+					},
+					{
+						"time": 3.4,
+						"color": "ffffffff",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 3.9, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0.2333, "name": "images/UI_jiayuan_Farm/UI_StarLightA" },
+					{ "time": 0.9, "name": null },
+					{ "time": 1.0667, "name": "images/UI_jiayuan_Farm/UI_StarLightA" },
+					{ "time": 1.7333, "name": null },
+					{ "time": 2.0667, "name": "images/UI_jiayuan_Farm/UI_StarLightA" },
+					{ "time": 2.7333, "name": null },
+					{ "time": 3.2333, "name": "images/UI_jiayuan_Farm/UI_StarLightA" },
+					{ "time": 3.9, "name": null }
+				]
+			},
+			"images/UI_jiayuan_Farm/UI_StarLightA2": {
+				"color": [
+					{
+						"time": 0,
+						"color": "ffffffff",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.5, "color": "ffffff00", "curve": "stepped" },
+					{
+						"time": 1.2,
+						"color": "ffffff00",
+						"curve": [ 0, 0.59, 0.75, 1 ]
+					},
+					{
+						"time": 1.3667,
+						"color": "ffffffff",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.8667, "color": "ffffff00", "curve": "stepped" },
+					{
+						"time": 2.8667,
+						"color": "ffffff00",
+						"curve": [ 0, 0.59, 0.75, 1 ]
+					},
+					{
+						"time": 3.0333,
+						"color": "ffffffff",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 3.5333, "color": "ffffff00", "curve": "stepped" },
+					{
+						"time": 3.8333,
+						"color": "ffffff00",
+						"curve": [ 0, 0.59, 0.75, 1 ]
+					},
+					{ "time": 4, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "time": 0, "name": "images/UI_jiayuan_Farm/UI_StarLightA" },
+					{ "time": 0.5, "name": null },
+					{ "time": 1.2, "name": "images/UI_jiayuan_Farm/UI_StarLightA" },
+					{ "time": 1.8667, "name": null },
+					{ "time": 2.8667, "name": "images/UI_jiayuan_Farm/UI_StarLightA" },
+					{ "time": 3.5333, "name": null },
+					{ "time": 3.8333, "name": "images/UI_jiayuan_Farm/UI_StarLightA" }
+				]
+			}
+		},
+		"bones": {
+			"images/UI_jiayuan_Farm/UI_LightC": {
+				"translate": [
+					{ "time": 1, "x": 49.68, "y": 0 },
+					{ "time": 2.6667, "x": -214.18, "y": 0 }
+				]
+			},
+			"images/UI_jiayuan_Farm/UI_StarLightA": {
+				"translate": [
+					{ "time": 0.2333, "x": -232.34, "y": 282.9, "curve": "stepped" },
+					{ "time": 0.9, "x": -232.34, "y": 282.9 },
+					{ "time": 1.0667, "x": -18.75, "y": 262.74, "curve": "stepped" },
+					{ "time": 1.7333, "x": -18.75, "y": 262.74 },
+					{ "time": 2.0667, "x": 226.9, "y": -239.75, "curve": "stepped" },
+					{ "time": 2.7333, "x": 226.9, "y": -239.75 },
+					{ "time": 3.2333, "x": -232.05, "y": -243.93 }
+				],
+				"scale": [
+					{ "time": 0.2333, "x": 0.5, "y": 0.5 },
+					{ "time": 0.4, "x": 1, "y": 1 },
+					{ "time": 0.9, "x": 0.3, "y": 0.3 },
+					{ "time": 1.0667, "x": 0.5, "y": 0.5 },
+					{ "time": 1.2333, "x": 1, "y": 1 },
+					{ "time": 1.7333, "x": 0.3, "y": 0.3 },
+					{ "time": 2.0667, "x": 0.934, "y": 0.934 },
+					{ "time": 2.2333, "x": 1.434, "y": 1.434 },
+					{ "time": 2.7333, "x": 0.734, "y": 0.734 },
+					{ "time": 3.2333, "x": 0.5, "y": 0.5 },
+					{ "time": 3.4, "x": 1, "y": 1 },
+					{ "time": 3.9, "x": 0.3, "y": 0.3 }
+				]
+			},
+			"images/UI_jiayuan_Farm/UI_StarLightA2": {
+				"translate": [
+					{ "time": 0, "x": 198.97, "y": 228.21, "curve": "stepped" },
+					{ "time": 0.5, "x": 198.97, "y": 228.21 },
+					{ "time": 1.2, "x": 11.9, "y": 283.34, "curve": "stepped" },
+					{ "time": 1.8667, "x": 11.9, "y": 283.34 },
+					{ "time": 2.8667, "x": -203.11, "y": 229.79, "curve": "stepped" },
+					{ "time": 3.5333, "x": -203.11, "y": 229.79 },
+					{ "time": 3.8333, "x": 198.97, "y": 228.21 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 },
+					{ "time": 0.5, "x": 0.3, "y": 0.3 },
+					{ "time": 1.2, "x": 0.5, "y": 0.5 },
+					{ "time": 1.3667, "x": 1, "y": 1 },
+					{ "time": 1.8667, "x": 0.3, "y": 0.3 },
+					{ "time": 2.8667, "x": 0.934, "y": 0.934 },
+					{ "time": 3.0333, "x": 1.434, "y": 1.434 },
+					{ "time": 3.5333, "x": 0.734, "y": 0.734 },
+					{ "time": 3.8333, "x": 0.5, "y": 0.5 },
+					{ "time": 4, "x": 1, "y": 1 }
+				]
+			}
+		}
+	}
+}
+}

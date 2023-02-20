@@ -1,0 +1,72 @@
+新电脑环境检测（前端必备环境）22
+
+一.nodejs环境 
+	a.键盘同时按下 win+R 打开运行面板
+	b.运行面板输入 cmd 回车
+	c.黑色命令行窗口输入 node -v 回车
+	如果 出现 'node' 不是内部或外部命令，也不是可运行的程序或批处理文件。 表示没有nodejs环境
+		去nodejs官网下载  ：https://nodejs.org/dist/v18.12.1/node-v18.12.1-x64.msi
+		下载好后直接安装，一直点下一步就行
+		nodejs安装结束
+	d.重复 上面 abc步骤
+	如果出现 v18.12.1 差不多的版本号，表示node环境安装成功
+	
+二.typescript环境（首先要安装nodejs环境）
+	a.键盘同时按下 win+R 打开运行面板
+	b.运行面板输入 cmd 回车
+	c.黑色命令行窗口输入 tsc -v 回车
+		如果 出现 'tsc' 不是内部或外部命令，也不是可运行的程序或批处理文件。 表示没有nodejs环境
+		在黑色命令行窗口输入 npm i typescript -g 回车
+	
+	如果出现 Version 4.9.3 差不多的版本号信息则表示tsc环境安装成功！！！
+
+====================
+
+1.复制 ".laya" 文件夹 到根目录
+	打开根目录下的   "开发支持"  文件夹
+	里面有个 “.laya.zip”压缩文件，打开“.laya.zip”。
+	将打开的“.laya.zip”的 ".laya"文件夹解压到项目根目录
+
+2.修改laya编辑器启动配置
+	打开根目录下的   ".laya"  文件夹 （步骤1完成后才有该文件夹）
+	打开".laya"  文件夹下的“launch.json”文件
+	将：		"runtimeExecutable": "C:\\Users\\Administrator\\AppData\\Local\\Google\\Chrome\\Application/chrome.exe",
+	中的  ： 	"C:\\Users\\Administrator\\AppData\\Local\\Google\\Chrome\\Application/chrome.exe"
+	替换为你自己的浏览器的启动地址
+
+	注意：如果浏览器地址使用的是\来分割目录 那么需要改成\\ 如果是/则不需要修改
+
+3.修复 花屏
+	打开根目录下的   "开发支持"  文件夹
+	里面有个 “花屏修复_shader.rar”压缩文件，打开“花屏修复_shader.rar”。
+	将打开的“花屏修复_shader.rar”的里的 "shader" 文件夹中的所有文件：解压并替换到 "项目根目录/bin/res/shader" 目录
+
+4.打开laya项目并运行即可
+
+
+================================
+
+
+
+
+
+
+
+单独配置跨域浏览器（不依托Laya直接打开本地项目bin文件时可以使用）
+三.快捷打开跨域浏览器设置：
+	在桌面右键 新建文本文档 保存并改名为 "跨域.bat"
+	.bat 是文件后缀
+	右键点击 跨域.bat 文件 点击编辑
+	输入 下面的内容
+	start C:\Users\Administrator\AppData\Local\Google\Chrome\Application\chrome.exe --disable-web-security --user-data-dir="C:\MyChromeDevUserData" --flag-switches-begin --flag-switches-end
+	
+	start后面的 C:\Users\Administrator\AppData\Local\Google\Chrome\Application\chrome.exe  修改为你本地的浏览器的地址。
+	-------------
+	如果浏览器地址有空的文件夹则需要在那个文件夹加上""
+		如果浏览器地址为 C:\Program Files (x86)\AppData\Local\Google\Chrome\Application\chrome.exe
+		需要改为：C:\"Program Files (x86)"\AppData\Local\Google\Chrome\Application\chrome.exe
+		即：	start C:\"Program Files (x86)"\AppData\Local\Google\Chrome\Application\chrome.exe --disable-web-security --user-data-dir="C:\MyChromeDevUserData" --flag-switches-begin --flag-switches-end
+	--------------
+
+	保存并退出
+	双击 “跨域.bat”就能打开跨域浏览器

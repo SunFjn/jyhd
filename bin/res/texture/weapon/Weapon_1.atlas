@@ -1,0 +1,25 @@
+{
+    "frames": {
+        "0.png": {
+            "frame": {
+                "h": 71,
+                "idx": 0,
+                "w": 358,
+                "x": 0,
+                "y": 0
+            },
+            "sourceSize": {
+                "h": 512,
+                "w": 1024
+            },
+            "spriteSourceSize": {
+                "x": 455,
+                "y": 227
+            }
+        }
+    },
+    "meta": {
+        "image": "Weapon_1.png",
+        "prefix": "Weapon_1/"
+    }
+}

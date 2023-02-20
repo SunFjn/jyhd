@@ -1,0 +1,39 @@
+{
+    "x":0,
+    "type":"ItemRender",
+    "selectedBox":1,
+    "selecteID":44,
+    "props":{"width":530,"visible":true,"sceneColor":"#000000","height":45},
+    "nodeParent":-1,
+    "label":"ItemRender",
+    "isOpen":true,
+    "isDirectory":true,
+    "isAniNode":true,
+    "hasChild":true,
+    "compId":1,
+    "child":[
+        {
+            "x":15,
+            "type":"HTMLDivElement",
+            "props":{"y":0,"x":0,"width":530,"var":"recordHtml","innerHTML":"<span style='color:#1F304d;font-size: 26px'>天赐鸿福,</span>","height":45},
+            "nodeParent":1,
+            "label":"HTMLDivElement(recordHtml)",
+            "isDirectory":false,
+            "isAniNode":true,
+            "hasChild":false,
+            "compId":44,
+            "child":[
+                ]
+        }],
+    "animations":[
+        {
+            "nodes":[
+                ],
+            "name":"ani1",
+            "id":1,
+            "frameRate":24,
+            "action":0
+        }],
+    "$LOCKED":false,
+    "$HIDDEN":false
+}

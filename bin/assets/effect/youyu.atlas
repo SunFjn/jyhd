@@ -1,0 +1,93 @@
+{
+    "frames": {
+        "0.png": {
+            "frame": {
+                "h": 68,
+                "idx": 0,
+                "w": 144,
+                "x": 0,
+                "y": 0
+            },
+            "sourceSize": {
+                "h": 68,
+                "w": 159
+            },
+            "spriteSourceSize": {
+                "x": 2,
+                "y": 0
+            }
+        },
+        "1.png": {
+            "frame": {
+                "h": 68,
+                "idx": 0,
+                "w": 155,
+                "x": 145,
+                "y": 0
+            },
+            "sourceSize": {
+                "h": 68,
+                "w": 159
+            },
+            "spriteSourceSize": {
+                "x": 2,
+                "y": 0
+            }
+        },
+        "2.png": {
+            "frame": {
+                "h": 68,
+                "idx": 0,
+                "w": 159,
+                "x": 0,
+                "y": 69
+            },
+            "sourceSize": {
+                "h": 68,
+                "w": 159
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "3.png": {
+            "frame": {
+                "h": 68,
+                "idx": 0,
+                "w": 155,
+                "x": 160,
+                "y": 69
+            },
+            "sourceSize": {
+                "h": 68,
+                "w": 159
+            },
+            "spriteSourceSize": {
+                "x": 2,
+                "y": 0
+            }
+        },
+        "4.png": {
+            "frame": {
+                "h": 68,
+                "idx": 0,
+                "w": 144,
+                "x": 0,
+                "y": 138
+            },
+            "sourceSize": {
+                "h": 68,
+                "w": 159
+            },
+            "spriteSourceSize": {
+                "x": 3,
+                "y": 0
+            }
+        }
+    },
+    "meta": {
+        "image": "youyu.png",
+        "prefix": "youyu/"
+    }
+}
